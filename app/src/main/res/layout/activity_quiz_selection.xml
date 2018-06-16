@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#008000"
+    tools:context="com.tanaseandrei.quizcourse.QuizSelectionActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <!--matematica will become Geografie-->
+        <Button
+            android:id="@+id/btnOneTimeQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="#524d47"
+            android:drawableLeft="@drawable/invention"
+            android:foreground="?attr/selectableItemBackground"
+            android:paddingLeft="45dp"
+            android:text="One Time Quiz"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--matematica will become Geografie-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRandomQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginTop="44dp"
+        android:background="#e7595d"
+        android:drawableLeft="@drawable/invention"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingLeft="45dp"
+        android:text="Single Quiz"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tanaseandrei.quizcourse">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SignUp" />
+        <activity
+            android:name=".Login"
+            android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".QuizCourseActivity" />
+        <activity android:name=".TeacherActivity" />
+        <activity android:name=".IstoreActivity" />
+        <activity android:name=".RomanaActivity" />
+        <activity android:name=".IstorieQuizFormActivity" />
+        <activity android:name=".RomanaQuizFormAcitivity" />
+        <activity android:name=".ShowQuestionsActivity" />
+        <activity android:name=".BiologyQUizFormActivity" />
+        <activity android:name=".PsychologyQuizFormActivity" />
+        <activity android:name=".GeographyQuizFormActivity" />
+        <activity android:name=".GeografieActivity" />
+        <activity android:name=".PsihologieActivity" />
+        <activity android:name=".BiologieActivity" />
+        <activity android:name=".SingleQuizRomana" />
+        <activity android:name=".SingleQuizBiologieActivity" />
+        <activity android:name=".SingleQuizGeographyActivity" />
+        <activity android:name=".SingleQuizPsucholgieActivity" />
+        <activity android:name=".OptionalSocilogieQuizActivity" />
+        <activity android:name=".QuizSelectionActivity" />
+        <activity android:name=".SingleQuizIstoreActivity" />
+        <activity android:name=".UserPointsActivity" />
+        <activity android:name=".UserGradesGenerateActivity" />
+        <activity android:name=".SingleQuizSocilogieActivity"></activity>
+    </application>
+
+</manifest>

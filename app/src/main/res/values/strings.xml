@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QuizCourse</string>
+
+    <string-array name="spinner_item_option">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

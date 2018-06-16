@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollViewQuizCousre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff00"
+    android:padding="6dp"
+    tools:context="com.tanaseandrei.quizcourse.QuizCourseActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnIstorie"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="#f0eb79"
+                android:drawableTop="@drawable/computer"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="25dp"
+                android:text="Istorie"
+                android:textAllCaps="false"
+                android:textColor="#2f2e2e"
+                android:textSize="18sp" />
+
+
+            <Button
+                android:id="@+id/btnRomână"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+
+                android:layout_weight="1"
+                android:background="#524d47"
+                android:drawableTop="@drawable/sports"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="25dp"
+                android:text="Română"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <!--matematica will become Geografie-->
+            <Button
+                android:id="@+id/btnGeografie"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+
+                android:layout_weight="1"
+                android:background="#e7595d"
+                android:drawableLeft="@drawable/invention"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingLeft="45dp"
+                android:text="Geografie"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Fizica will become Psihologie-->
+            <Button
+                android:id="@+id/btnPsihologie"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="#a084d1"
+                android:drawableTop="@drawable/computer"
+                android:foreground="?attr/selectableItemBackground"
+                android:paddingTop="25dp"
+                android:text="Psihologie"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <!--Chimie will become Biologie-->
+            <Button
+                android:id="@+id/btnBiologie"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="#80e7a9"
+                android:drawableTop="@drawable/sports"
+                android:paddingTop="25dp"
+                android:text="Biologie"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

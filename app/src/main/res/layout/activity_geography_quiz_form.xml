@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="#fff"
+    tools:context="com.tanaseandrei.quizcourse.GeographyQuizFormActivity">
+
+    <TextView
+        android:id="@+id/labelQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question Detail Here"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/labelQuestion"
+        android:hint="Enter Question Detail"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/txtOption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Option 1"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:id="@+id/txtOption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtOption1"
+        android:ems="10"
+        android:hint="Enter Option 2"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtOption3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtOption1"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="Enter Option 3"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtOption4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignLeft="@+id/txtOption3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/txtOption3"
+        android:layout_below="@+id/txtOption3"
+        android:ems="10"
+        android:hint="Enter Option 4"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOption4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Correct Option No: " />
+
+        <Spinner
+            android:id="@+id/spinnerCorrectOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/addQUestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:text="Add Question"
+        android:textColor="#fff" />
+
+</RelativeLayout>
